@@ -3,6 +3,7 @@ package com.milton.spark.core
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
+  * 广播变量小案例
   * Created by milton on 2016/12/2.
   */
 object BroadcastDemo {
