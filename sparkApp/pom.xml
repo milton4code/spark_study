@@ -9,6 +9,7 @@
         <scala.version>2.10.6</scala.version>
         <spark.version>1.6.2</spark.version>
         <hadoop.version>2.6.2</hadoop.version>
+        <hbase.version>1.2.4</hbase.version>
     </properties>
 
     <repositories>
@@ -118,6 +119,25 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.7</version>
         </dependency>
+
+        <!--hbase lib-->
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-common</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-client</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.hbase</groupId>
+            <artifactId>hbase-server</artifactId>
+            <version>${hbase.version}</version>
+        </dependency>
+
     </dependencies>
     <build>
         <sourceDirectory>src/main/scala</sourceDirectory>
